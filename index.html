@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search-container">
+        <h1>Weather Dashboard</h1>
+        <form id="search-form">
+            <input type="text" id="search-input" placeholder="Enter A City">
+            <button type="submit">Search</button>
+            <div id="search-history">
+                <h2>Search History</h2>
+                <ul id="searchedcities" class="city-list"></ul>
+            </div>
+        </form>
+    </div>
+    <div class="weather-container" id="city-weather">
+        <h2 id="city-info"> City Name and Date</h2>
+        <h3 id="current-weather">
+            <img src="https://openweathermap.org/img/wn/04d@2x.png">
+        </h3>
+        <p id="temperature"></p>
+        <p id="wind-speed"></p>
+        <p id="humidity"></p>
+    </div>
+    <div class="grid" id="five-day">
+        <h2>Following 5-Day Forecast</h2>
+        <div class="grid-item" id="day1"></div>
+        <div class="grid-item" id="day2"></div>
+        <div class="grid-item" id="day3"></div>
+        <div class="grid-item" id="day4"></div>
+        <div class="grid-item" id="day5"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
