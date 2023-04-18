@@ -42,6 +42,11 @@ body {
     padding: 20px;
   }
 
+  .five-day {
+    justify-content: space-between;
+    padding: 20px;
+  }
+
   .grid {
     display: flex;
     flex-wrap: wrap;
